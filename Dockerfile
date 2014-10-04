@@ -8,7 +8,7 @@ RUN apt-get -qq update
 RUN apt-get install -y wget git-core
 
 # Pull project
-RUN git clone git@github.com:sionsmith/spring-petclinic.git /home/spring-petclinic
+RUN git clone https://github.com/sionsmith/spring-petclinic.git /home/spring-petclinic
 
 # Build project
 RUN cd /home/spring-petclinic &amp;&amp; mvn package
