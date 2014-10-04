@@ -12,6 +12,4 @@ RUN git clone https://github.com/sionsmith/spring-petclinic.git
 
 # Build project
 RUN cd spring-petclinic && mvn package
-
-# make directories
-RUN mkdir /logs
+RUN mv /spring-petclinic/target/petclinic.war /opt/tomcat/webapps/petclinic.war
