@@ -11,7 +11,7 @@ RUN apt-get install -y wget git-core
 RUN git clone https://github.com/sionsmith/spring-petclinic.git
 
 # Build project
-RUN cd /home/spring-petclinic &amp;&amp; mvn package
+RUN cd /spring-petclinic &amp;&amp; mvn package
 
 # make directories
 RUN mkdir /logs
