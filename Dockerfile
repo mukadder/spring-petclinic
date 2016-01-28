@@ -8,7 +8,7 @@ RUN apt-get -qq update
 RUN apt-get install -y wget git-core maven
 
 # Pull project
-RUN git clone https://github.com/sionsmith/spring-petclinic.git
+RUN git clone https://github.com/mukadder/spring-petclinic.git
 
 # Build project
 RUN cd spring-petclinic && mvn package
